@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*---------------------------------------*/
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-space-evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flex-column-evenly {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tulip-background {
+  background: url('../images/tulipField.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: unset;
+  object-fit: cover;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.translucent-overlay {
+  background-color: rgba(245, 245, 220, 0.39);
+  width: 60vw;
+}
+.translucent-overlay > h1 {
+  font-size: 100pt;
+  font-weight: 300;
+  position: relative;
+  bottom: 13%;
+}
+.color-boxes {
+  position: relative;
+  bottom: 20%;
+}
+.box {
+  width: 125px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blue {
+  background-color: #a7d7ff;
+}
+.pink {
+  background-color: #DC9CA8;
+}
+.purple {
+  background-color: #A2B7CE;
+}
+.yellow {
+  background-color: #F7D361;
+}
